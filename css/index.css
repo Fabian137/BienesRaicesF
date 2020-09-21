@@ -1,0 +1,213 @@
+/*Selector
+Declaración
+Propiedad
+valores
+
+para traer a llamar id se usa #*/
+html{
+    font-size: 62,5%; /*Reset para los REMS - 62.5%=10px de 16px*/
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+/*Sección de globales, que vamo a reciclar esta regla de contenedor*/
+.contenedor{
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+/* podemos usar "margin" y vamos a poder editar cuatro valores que iran en sentido del reloj
+primero top, arriba después derecha, abajo e izquierda, si pondemos un sólo valor se aplicará el mismo para 
+top, right, buttom, left*/
+}
+
+/*Estilos del header*/
+.siteheader.inicio{
+    background-image: url(../img/header.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 43rem;
+}
+.barra{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding-top: 2rem;
+    /* */
+}
+.navegacion a{
+    color:#ffffff;
+    font-family: sans-serif;
+    margin-right: 2rem;
+    text-decoration: none;
+}
+.navegacion a:hover{
+    color: #111111;
+}
+.titulo-header{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.titulo-header h1{
+    color:white;
+    max-width: 600px;
+    line-height: 2;
+    padding-bottom: 2rem;
+}
+
+/* la otra zona con background-image; o sea el "contactános" */
+.contactos{
+    background-image: url(../img/encuentra.jpg);
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+
+    min-height: 21rem;
+    background-position: center center;
+    background-size: 106rem;
+    line-height: 2;
+    color:white;
+}
+.encuentras{
+    margin: 4rem 0rem  6rem 9rem; 
+    justify-content: center;
+}
+.boton {
+    margin-top: 4rem;
+    background-color: orange;
+    max-width: 9rem;
+    padding: 5px;
+    text-align: center;
+    justify-content: center;
+}
+.boton a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+}
+.boton a:hover{
+    color:black;
+}
+
+/*icons-index*/
+.contenedor h2{
+    text-align: center;
+}
+.icons-index{
+    display: flex;
+    justify-content: space-between;
+}
+.icon{
+    flex-basis: calc(33.3% - 4rem);
+    text-align: center;
+    line-height: 2;
+    padding-bottom: 1.5rem;
+    padding-top:2rem;
+}
+.icon h3{
+    text-transform: uppercase;
+}
+
+
+
+
+
+html{
+    font-size: 62,5%; /*Reset para los REMS - 62.5%=10px de 16px*/
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+.contenedor{
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* NOSOTROS HTML*/
+/*Header*/
+.headernos{
+    background-color: #303030;
+}
+.contenedor1{
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navegacion2 a{
+    color:#ffffff;
+    font-family: sans-serif;
+    margin-right: 2rem;
+    text-decoration: none;
+}
+.navegacion2 a:hover{
+    color: #118fcf;
+}
+.barra{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding-top: 2rem;
+    padding-top:1rem;
+    padding-bottom: 1rem;
+}
+
+/*body*/
+
+h2{
+    text-align: center;
+}
+
+
+.imagenos{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2.5rem;
+}
+.contenedor img{
+    max-height: 30rem;
+    max-width: 40rem;
+}
+.elcomplicado{
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+/*main*/
+.contenedor h2{
+    text-align: center;
+}
+.icons-index{
+    display: flex;
+    justify-content: space-between;
+}
+.icon{
+    flex-basis: calc(33.3% - 4rem);
+    text-align: center;
+    line-height: 2;
+}
+.icon h3{
+    text-transform: uppercase;
+}
+
+/*footer*/
+.foot{
+    background-color: #303030;
+    color:white;
+}
+.contenedor2{
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+
+    align-items:center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
