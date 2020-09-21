@@ -1,0 +1,2 @@
+# BienesRaicesF
+De la clase
