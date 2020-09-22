@@ -8,6 +8,7 @@ html{
     font-size: 62,5%; /*Reset para los REMS - 62.5%=10px de 16px*/
 }
 body{
+    background-color: rgba(214, 214, 214, 0.87);
     font-family: 'Lato', sans-serif;
 }
 /*Sección de globales, que vamo a reciclar esta regla de contenedor*/
@@ -34,16 +35,7 @@ top, right, buttom, left*/
     align-items:center;
     padding-top: 2rem;
     /* */
-}
-.navegacion a{
-    color:#ffffff;
-    font-family: sans-serif;
-    margin-right: 2rem;
-    text-decoration: none;
-}
-.navegacion a:hover{
-    color: #111111;
-}
+}   
 .titulo-header{
     height: 100%;
     display: flex;
@@ -57,43 +49,67 @@ top, right, buttom, left*/
     padding-bottom: 2rem;
 }
 
+/*El botón verde de TODAS*/
+.todasboton{
+    background-color: rgb(31, 221, 31);
+    max-width: 7rem;
+
+    margin-left: 60rem;
+    margin-top: 2.7rem;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    transition-duration: .5s;
+    margin-bottom: 2.7rem;
+}
+.todasboton:hover{
+    background-color: seagreen;
+}
+.todasboton a{
+    color:white;
+    text-decoration: none;
+}
 /* la otra zona con background-image; o sea el "contactános" */
 .contactos{
     background-image: url(../img/encuentra.jpg);
     height: 15vh;
     display: flex;
     flex-direction: column;
-
     min-height: 21rem;
     background-position: center center;
     background-size: 106rem;
     line-height: 2;
     color:white;
 }
+.encuentras h2{
+    text-align: left;
+}
 .encuentras{
     margin: 4rem 0rem  6rem 9rem; 
-    justify-content: center;
 }
 .boton {
     margin-top: 4rem;
-    background-color: orange;
+    background-color: rgb(255, 165, 0);
     max-width: 9rem;
     padding: 5px;
     text-align: center;
     justify-content: center;
+    transition-duration: .5s;
 }
 .boton a{
     text-decoration: none;
     color: #ffffff;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
 }
-.boton a:hover{
-    color:black;
-}
-
+.boton:hover{
+    background-color: rgb(0, 0, 0);
+} /* Con "transtion-duration" y "background-color" en hoover daremos el mismo efecto como si lo aplicaramos 
+al texto pero este efecto se le da al botón completo*/
+ 
 /*icons-index*/
 .contenedor h2{
     text-align: center;
+    margin-top: 1.5rem;
 }
 .icons-index{
     display: flex;
@@ -142,9 +158,10 @@ body{
     font-family: sans-serif;
     margin-right: 2rem;
     text-decoration: none;
+    letter-spacing: 4px;
 }
 .navegacion2 a:hover{
-    color: #118fcf;
+    color: #00ffff;
 }
 .barra{
     display: flex;
