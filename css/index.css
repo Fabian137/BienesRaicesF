@@ -8,7 +8,7 @@ html{
     font-size: 62,5%; /*Reset para los REMS - 62.5%=10px de 16px*/
 }
 body{
-    background-color: rgba(214, 214, 214, 0.87);
+   
     font-family: 'Lato', sans-serif;
 }
 /*Sección de globales, que vamo a reciclar esta regla de contenedor*/
