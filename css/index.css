@@ -2,13 +2,11 @@
 Declaración
 Propiedad
 valores
-
 para traer a llamar id se usa #*/
 html{
     font-size: 62,5%; /*Reset para los REMS - 62.5%=10px de 16px*/
 }
 body{
-   
     font-family: 'Lato', sans-serif;
 }
 /*Sección de globales, que vamo a reciclar esta regla de contenedor*/
@@ -16,9 +14,37 @@ body{
     max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
+}
 /* podemos usar "margin" y vamos a poder editar cuatro valores que iran en sentido del reloj
 primero top, arriba después derecha, abajo e izquierda, si pondemos un sólo valor se aplicará el mismo para 
 top, right, buttom, left*/
+img{
+    max-width:100%;
+}
+h1{
+    font-size: 2.4rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.6rem;
+}
+h4{
+    font-size: 1.2rem;
+}
+
+/*Utilidades*/
+
+.cambio-seccion{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.texto-centrado{
+    text-align: center;
+}
+.fontw-300{
+    font-weight: 300;
 }
 
 /*Estilos del header*/
@@ -34,7 +60,8 @@ top, right, buttom, left*/
     justify-content: space-between;
     align-items:center;
     padding-top: 2rem;
-    /* */
+    padding-top:1rem;
+    padding-bottom: 1rem;
 }   
 .titulo-header{
     height: 100%;
@@ -106,11 +133,9 @@ top, right, buttom, left*/
 } /* Con "transtion-duration" y "background-color" en hoover daremos el mismo efecto como si lo aplicaramos 
 al texto pero este efecto se le da al botón completo*/
  
+
 /*icons-index*/
-.contenedor h2{
-    text-align: center;
-    margin-top: 1.5rem;
-}
+
 .icons-index{
     display: flex;
     justify-content: space-between;
@@ -126,33 +151,11 @@ al texto pero este efecto se le da al botón completo*/
     text-transform: uppercase;
 }
 
-
-
-
-
-html{
-    font-size: 62,5%; /*Reset para los REMS - 62.5%=10px de 16px*/
-}
-body{
-    font-family: 'Lato', sans-serif;
-}
-.contenedor{
-    max-width: 1100px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 /* NOSOTROS HTML*/
 /*Header*/
 .headernos{
     background-color: #303030;
 }
-.contenedor1{
-    max-width: 1100px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .navegacion2 a{
     color:#ffffff;
     font-family: sans-serif;
@@ -163,28 +166,21 @@ body{
 .navegacion2 a:hover{
     color: #00ffff;
 }
-.barra{
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-    padding-top: 2rem;
-    padding-top:1rem;
-    padding-bottom: 1rem;
-}
-
-/*body*/
-
+/*body de nosotros.html*/
 h2{
     text-align: center;
 }
-
-
 .imagenos{
     display: flex;
     justify-content: space-between;
     padding-top: 2.5rem;
 }
-.contenedor img{
+.contenedor3{
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contenedor3 img{
     max-height: 30rem;
     max-width: 40rem;
 }
@@ -196,6 +192,7 @@ h2{
 }
 
 /*main*/
+
 .contenedor h2{
     text-align: center;
 }
@@ -204,7 +201,8 @@ h2{
     justify-content: space-between;
 }
 .icon{
-    flex-basis: calc(33.3% - 4rem);
+    flex-basis: calc(33.3% - 2rem); /*Nos divide entre tres 
+    el espacio de las tres etiquetas y nos da una separación de dos rem*/
     text-align: center;
     line-height: 2;
 }
@@ -212,19 +210,26 @@ h2{
     text-transform: uppercase;
 }
 
+/*Sección principal etiquetas*/
+
+.contenedor-etiquetas{    
+    display:flex;
+    justify-content: space-between;
+}
+.etiqueta{
+    flex-basis: calc(33.3% - 1rem); 
+    border: 1px solid #b5b5b5;
+    background-color: #f5f5f5;
+}
+.textoetiqueta{
+    padding:2rem;
+}
+
+
 /*footer*/
 .foot{
+    padding-top: .5rem;
+    padding-bottom: .5rem;
     background-color: #303030;
     color:white;
-}
-.contenedor2{
-    max-width: 1100px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: space-between;
-
-    align-items:center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
 }
