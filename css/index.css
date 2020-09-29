@@ -5,7 +5,11 @@ valores
 para traer a llamar id se usa #*/
 html{
     font-size: 62,5%; /*Reset para los REMS - 62.5%=10px de 16px*/
+    box-sizing:border-box;
 }
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
 body{
     font-family: 'Lato', sans-serif;
 }
@@ -46,6 +50,30 @@ h4{
 .fontw-300{
     font-weight: 300;
 }
+.d-block{
+    display:block !important; /*Debesmos tener un orden
+    porque el código lee de arriba a abajo y de izquierda a derecha*/
+}
+
+.boton{
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.8rem 3rem;
+    margin-top: 1rem;
+    display: inline-block;
+    text-align:center;
+}
+.boton-amarillo{
+    background-color:#E08709;
+}
+.boton-verde{
+    background-color: #71B100;
+}
+.b-ver-todas{
+    display: flex;
+    justify-content: flex-end;
+}
 
 /*Estilos del header*/
 .siteheader.inicio{
@@ -76,36 +104,16 @@ h4{
     padding-bottom: 2rem;
 }
 
-/*El botón verde de TODAS*/
-.todasboton{
-    background-color: rgb(31, 221, 31);
-    max-width: 7rem;
 
-    margin-left: 60rem;
-    margin-top: 2.7rem;
-    padding: 10px;
-    text-align: center;
-    justify-content: center;
-    transition-duration: .5s;
-    margin-bottom: 2.7rem;
-}
-.todasboton:hover{
-    background-color: seagreen;
-}
-.todasboton a{
-    color:white;
-    text-decoration: none;
-}
 /* la otra zona con background-image; o sea el "contactános" */
 .contactos{
     background-image: url(../img/encuentra.jpg);
-    height: 15vh;
-    display: flex;
-    flex-direction: column;
-    min-height: 21rem;
     background-position: center center;
     background-size: 106rem;
-    line-height: 2;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    min-height: 21rem;
     color:white;
 }
 .encuentras h2{
@@ -114,26 +122,7 @@ h4{
 .encuentras{
     margin: 4rem 0rem  6rem 9rem; 
 }
-.boton {
-    margin-top: 4rem;
-    background-color: rgb(255, 165, 0);
-    max-width: 9rem;
-    padding: 5px;
-    text-align: center;
-    justify-content: center;
-    transition-duration: .5s;
-}
-.boton a{
-    text-decoration: none;
-    color: #ffffff;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
-}
-.boton:hover{
-    background-color: rgb(0, 0, 0);
-} /* Con "transtion-duration" y "background-color" en hoover daremos el mismo efecto como si lo aplicaramos 
-al texto pero este efecto se le da al botón completo*/
- 
-
+*/
 /*icons-index*/
 
 .icons-index{
@@ -167,9 +156,6 @@ al texto pero este efecto se le da al botón completo*/
     color: #00ffff;
 }
 /*body de nosotros.html*/
-h2{
-    text-align: center;
-}
 .imagenos{
     display: flex;
     justify-content: space-between;
@@ -192,10 +178,6 @@ h2{
 }
 
 /*main*/
-
-.contenedor h2{
-    text-align: center;
-}
 .icons-index{
     display: flex;
     justify-content: space-between;
@@ -223,6 +205,29 @@ h2{
 }
 .textoetiqueta{
     padding:2rem;
+}
+.textoetiqueta h3{
+    margin:0;
+}
+.textoetiqueta p{
+    line-height: 1.75;
+}
+.precio{
+    color: rgba(0, 128, 0, 0.918);
+    font-weight: 700;
+}
+
+.iconos-caracteristicas{
+    list-style: none;
+    padding:0;
+    display:flex;
+    justify-content: space-evenly;
+}
+.iconos-caracteristicas li{
+    display:flex;
+}
+.iconos-caracteristicas li img{
+    margin: 1rem;
 }
 
 
