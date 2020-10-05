@@ -106,6 +106,7 @@ h4{
 
 
 /* la otra zona con background-image; o sea el "contactános" */
+
 .contactos{
     background-image: url(../img/encuentra.jpg);
     background-position: center center;
@@ -116,13 +117,13 @@ h4{
     min-height: 21rem;
     color:white;
 }
-.encuentras h2{
-    text-align: left;
+.texto-contactos{
+    flex: 1;
+    color: #ffffff;
 }
-.encuentras{
-    margin: 4rem 0rem  6rem 9rem; 
+.texto-contactos p{
+    font-size: 1rem;
 }
-*/
 /*icons-index*/
 
 .icons-index{
@@ -265,15 +266,15 @@ h4{
     height: 0.5rem;
     background-color: #71B100;
 }
-/*
-.letextacomode{
-    max-width: 2rem;
+.text{
+    color:white
 }
-.testimoniales{
-    display: flex;
-
+.fondo{
+    justify-items: center;
+    background-color: #71B100;
+    border-radius: 1rem;
+    height: 15rem;
 }
-*/
 
 
 
