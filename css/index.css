@@ -154,7 +154,7 @@ h4{
 }
 .navegacion2 a:hover{
     color: #00ffff;
-}
+} /* Pseudo selector*/
 /*body de nosotros.html*/
 .imagenos{
     display: flex;
@@ -229,6 +229,52 @@ h4{
 .iconos-caracteristicas li img{
     margin: 1rem;
 }
+
+/*BLOG Y TESTIMONIALES*/
+.blog-testimoniales{
+    display:flex;
+    justify-content: space-between;   
+}
+.blog{
+    flex-basis: calc(65% - 1rem);
+}
+.testimoniales{
+    flex-basis: calc(35% - 1rem);
+}
+.blog-elemnts{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 1.3rem;
+}
+.imagen-blog{
+    flex-basis: 40%;
+}
+.parrafito{
+    flex-basis: calc(60% - 2rem);
+    line-height: 1.5;
+}
+.parrafito h3{
+    margin: 0;
+}
+.parrafito h3::after{ /*No existe dentro del 
+    html pero si en css*/
+    content: '';
+    display: block;
+    border: 1px #71B100 solid;
+    width: 10rem;
+    height: 0.5rem;
+    background-color: #71B100;
+}
+/*
+.letextacomode{
+    max-width: 2rem;
+}
+.testimoniales{
+    display: flex;
+
+}
+*/
+
 
 
 /*footer*/
