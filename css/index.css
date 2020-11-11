@@ -15,9 +15,9 @@ body{
 }
 /*Sección de globales, que vamo a reciclar esta regla de contenedor*/
 .contenedor{
+    margin: 90%;
     max-width: 1100px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 /* podemos usar "margin" y vamos a poder editar cuatro valores que iran en sentido del reloj
 primero top, arriba después derecha, abajo e izquierda, si pondemos un sólo valor se aplicará el mismo para 
@@ -84,18 +84,22 @@ h4{
     min-height: 43rem;
 }
 .barra{
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
     padding-top: 2rem;
-    padding-top:1rem;
-    padding-bottom: 1rem;
 }   
+@media (min-width:768px){
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+    }   
+
+}
 .titulo-header{
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align:center
 }
 .titulo-header h1{
     color:white;
@@ -103,7 +107,12 @@ h4{
     line-height: 2;
     padding-bottom: 2rem;
 }
+@media (min-width:768px){
+    .titulo-header{
+        text-align: left;
+    }
 
+}
 
 /* la otra zona con background-image; o sea el "contactános" */
 
@@ -117,19 +126,16 @@ h4{
     min-height: 21rem;
     color:white;
 }
+
+
 .texto-contactos{
-    flex: 1;
+    flex: 0 0 90%;
     color: #ffffff;
 }
 .texto-contactos p{
     font-size: 1rem;
 }
 /*icons-index*/
-
-.icons-index{
-    display: flex;
-    justify-content: space-between;
-}
 .icon{
     flex-basis: calc(33.3% - 4rem);
     text-align: center;
@@ -149,12 +155,24 @@ h4{
 .navegacion2 a{
     color:#ffffff;
     font-family: sans-serif;
-    margin-right: 2rem;
     text-decoration: none;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
+    display:block;
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 1.2rem;
 }
+@media (min-width:768px){
+    .navegacion2 a{
+        display: inline-block;
+        margin-left: 2rem;
+        padding: 0;
+    }
+
+}
+
 .navegacion2 a:hover{
-    color: #00f821;
+    color: #3a00a7;
 } /* Pseudo selector*/
 /*body de nosotros.html*/
 .imagenos{
@@ -179,10 +197,13 @@ h4{
 }
 
 /*main*/
-.icons-index{
-    display: flex;
-    justify-content: space-between;
+@media (min-width:768px){
+    .icons-index{
+        justify-content: space-between;
+        display: flex;
+    }
 }
+
 .icon{
     flex-basis: calc(33.3% - 2rem); /*Nos divide entre tres 
     el espacio de las tres etiquetas y nos da una separación de dos rem*/
@@ -192,17 +213,21 @@ h4{
 .icon h3{
     text-transform: uppercase;
 }
-
 /*Sección principal etiquetas*/
 
-.contenedor-etiquetas{    
-    display:flex;
-    justify-content: space-between;
+
+@media (min-width:768px){
+    .contenedor-etiquetas{    
+        display:flex;
+        justify-content: space-between;
+    }
+
 }
 .etiqueta{
     flex-basis: calc(33.3% - 1rem); 
     border: 1px solid #b5b5b5;
     background-color: #f5f5f5;
+    margin-bottom: 2rem;
 }
 .textoetiqueta{
     padding:2rem;
@@ -233,9 +258,16 @@ h4{
 
 /*BLOG Y TESTIMONIALES*/
 .blog-testimoniales{
-    display:flex;
-    justify-content: space-between;   
+    margin:1.5rem;
 }
+@media (min-width:768px){
+    .blog-testimoniales{
+        display:flex;
+        justify-content: space-between; 
+          
+    }
+}
+
 .blog{
     flex-basis: calc(65% - 1rem);
 }
@@ -297,9 +329,13 @@ h4{
 
 
 /*footer*/
-.foot{
+footer{
     padding-top: .5rem;
     padding-bottom: .5rem;
     background-color: #303030;
     color:white;
+}
+.navegacion2 p{
+    padding-top: 1rem;;
+    text-align: center;
 }
