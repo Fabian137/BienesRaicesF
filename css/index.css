@@ -86,13 +86,18 @@ h4{
 .barra{
     padding-top: 2rem;
 }   
+.barra p{
+    text-align:center;
+}
 @media (min-width:768px){
     .barra{
         display: flex;
         justify-content: space-between;
         align-items:center;
     }   
-
+    .barra p{
+        margin-right: 2rem;
+    }
 }
 .titulo-header{
     height: 100%;
@@ -258,7 +263,7 @@ h4{
 
 /*BLOG Y TESTIMONIALES*/
 .blog-testimoniales{
-    margin:1.5rem;
+    padding:1rem;
 }
 @media (min-width:768px){
     .blog-testimoniales{
@@ -329,13 +334,16 @@ h4{
 
 
 /*footer*/
+footer.contenedor{
+    background-color: #303030;
+}
 footer{
     padding-top: .5rem;
-    padding-bottom: .5rem;
+    padding-bottom: 1.2rem;
     background-color: #303030;
     color:white;
 }
 .navegacion2 p{
-    padding-top: 1rem;;
+    padding-top: 1rem;
     text-align: center;
 }
